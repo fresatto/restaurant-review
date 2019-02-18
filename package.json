@@ -1,0 +1,29 @@
+{
+  "name": "restaurant-review",
+  "version": "1.0.0",
+  "description": "---\r #### _Three Stage Course Material Project - Restaurant Reviews_",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.11.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GabrielFresatto/restaurant-review.git"
+  },
+  "author": "Gabriel Fresatto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GabrielFresatto/restaurant-review/issues"
+  },
+  "homepage": "https://github.com/GabrielFresatto/restaurant-review#readme"
+}

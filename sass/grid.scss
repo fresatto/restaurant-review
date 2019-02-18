@@ -6,6 +6,11 @@ $colpadding: 0 15px;
     flex-wrap: wrap;
 }
 
+.col-12 {
+    width: 100%;
+    padding: $colpadding;
+}
+
 .col-6 {
     width: 50%;
     padding: $colpadding;
@@ -16,7 +21,3 @@ $colpadding: 0 15px;
     padding: $colpadding;
 }
 
-.col-3 {
-    width: 25%;
-    padding: $colpadding;
-}

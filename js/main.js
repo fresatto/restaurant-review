@@ -74,12 +74,12 @@ fillCuisinesHTML = (cuisines = self.cuisines) => {
 initMap = () => {
   self.newMap = L.map('map', {
         center: [40.722216, -73.987501],
-        zoom: 12,
+        zoom: 19,
         scrollWheelZoom: false
       });
   L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.jpg70?access_token={mapboxToken}', {
     mapboxToken: 'pk.eyJ1IjoiZnJlc2F0dG8iLCJhIjoiY2pzOWJ0dTk4MWt4YTQ5dGZlNWh5YjB6YyJ9.WcFJT9u2Vy6CUtsDb7O6HQ',
-    maxZoom: 18,
+    maxZoom: 19,
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
       '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
       'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -158,15 +158,16 @@ fillRestaurantsHTML = (restaurants = self.restaurants) => {
 createRestaurantHTML = (restaurant) => {
   const li = document.createElement('li');
 
+  
+  const name = document.createElement('h1');
+  name.innerHTML = restaurant.name;
+  li.append(name);
+  
   const image = document.createElement('img');
   image.className = 'restaurant-img';
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
   li.append(image);
-
-  const name = document.createElement('h1');
-  name.innerHTML = restaurant.name;
-  li.append(name);
-
+  
   const neighborhood = document.createElement('p');
   neighborhood.innerHTML = restaurant.neighborhood;
   li.append(neighborhood);
