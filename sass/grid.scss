@@ -21,3 +21,20 @@ $colpadding: 0 15px;
     padding: $colpadding;
 }
 
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .col-sm-12 {
+        width: 100%;
+        padding: $colpadding;
+    }
+
+    .col-sm-6 {
+        width: 50%;
+        padding: $colpadding;
+    }
+
+
+}
+
+
