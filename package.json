@@ -4,8 +4,6 @@
   "description": "---\r #### _Three Stage Course Material Project - Restaurant Reviews_",
   "main": "gulpfile.js",
   "dependencies": {
-    "browser-sync": "^2.26.3",
-    "gulp": "^4.0.0",
     "gulp-sass": "^4.0.2",
     "node-sass": "^4.11.0"
   },
