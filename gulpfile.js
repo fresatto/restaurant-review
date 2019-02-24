@@ -13,6 +13,8 @@ gulp.task('sass', function () {
 
 
 // Watch sass
+
+// npm i local-web-server -g
 // ws -p 8000 no terminal pros restaurants carregarem
 gulp.task('serve', function() {
      browserSync.init({
